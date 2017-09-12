@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+
+    <h4>
+        Hallo AngularJS
+    </h4>
+
+    <div ng-app="" ng-init="info='halo-angular-js'">
+       <p>Nama : <input type="text" ng-model="nama" placeholder="Nama anda"/></p>
+       <!-- cara bind model ke html view dengan directive bind pada <p ng-bind="nama"></p>-->
+
+       <!--Dibawah ini cara bind model ke html view menggunakan Expressions AngularJS-->
+       <p>Your Name is {{nama}} </p>
+       <br/>
+
+        <p>Contoh aplikasi variabel (ng-init) di AngularJS : <span ng-bind="info"></span></p>
+    </div>
+
+</body>
+</html>
